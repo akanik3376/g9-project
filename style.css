@@ -6,6 +6,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.section-taitel {
+    color: #131313;
+    font-size: 3rem;
+    font-size: 45px;
+    font-weight: 600;
+}
+
 .text-light-gray {
     color: #727272;
 }
@@ -35,11 +42,7 @@ nav {
     align-items: center;
 }
 
-.nav-taitel {
-    color: #131313;
-    font-size: 3rem;
-    font-weight: 700;
-}
+
 
 nav ul {
     display: flex;
@@ -82,14 +85,14 @@ nav li a {
 
 .banner img {
     margin-top: 35px;
-    width: 100%;
+    width: 90%;
 }
 
 /* main stayle  */
 
 main {
     width: 1240px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* futues section  */
@@ -111,7 +114,7 @@ main {
 }
 
 .team-taitel {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 
@@ -123,6 +126,60 @@ main {
     color: #FF900E;
 }
 
+/* facts-card-container section stayle */
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    /* display: flex; */
+    text-align: center;
+    padding: 35px;
+    margin-top: 30px;
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card-taitel {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+/* sopncer style  */
+
+.Sponspors {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sponspors-img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.sponspors-img-container img {
+    width: 200px;
+    height: 50px;
+
+}
 
 
 /* responsiv style ********** */
@@ -134,7 +191,10 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav,
+    .facts-card-container,
+    .sponspors-img-container {
+
         flex-direction: column;
     }
 
@@ -149,13 +209,17 @@ main {
     }
 
     .teams-text-container {
-        padding: 10px;
+        padding: 1px;
         /* width: 320px; */
     }
 
     main {
         width: auto;
         margin: auto;
+    }
+
+    .facts-card-container {
+        padding: 20px;
     }
 
 
